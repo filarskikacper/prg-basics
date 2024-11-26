@@ -25,6 +25,23 @@ while not cards.empty():
     card = cards.get()
     print(card)
 
+cards.put(2)
+cards.put(3)
+cards.put(7)
+cards.put(4)
+cards.put(1)
+cards.put(9)
+cards.put(8)
+
+print(cards.get()+cards.get())
+
+count = 0
+while not cards.empty():
+    cards.get()
+    count += 1
+
+print(count)
+
 """
 Note the order of the printed elements.
 The last added element is printed first.
