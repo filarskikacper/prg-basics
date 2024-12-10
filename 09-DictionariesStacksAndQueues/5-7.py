@@ -11,6 +11,11 @@ hotels_in_Sopot = [
    {"name":"La Boutique","price":390.00},
    {"name":"Marina","price":410.00}
 ]
+
+def hotels(dict):
+    for hotel in dict:
+       print(dict["name"], end=',')
+
 avg_Krakow = 0
 for hotel, price in hotels_in_Krakow:
     avg_Krakow += price
@@ -20,3 +25,5 @@ avg_Sopot = 0
 for hotel in hotels_in_Sopot:
     avg_Sopot += hotels_in_Sopot[hotel]
 avg_Sopot /= len(hotels_in_Sopot)
+
+hotels(hotels_in_Krakow)
